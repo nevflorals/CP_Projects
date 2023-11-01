@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Hangman</title>
+        <script src="hangman.js"></script>
+    </head>
+
+    <body onload="init()">
+        <h2>Hangman</h2>
+        <h5>By: Nevaeh</h5>
+
+        <svg width="500" height="500">
+            <!-- Hangman Pole -->
+            <line x1="200" y1="200" x2="300" y2="200" stroke-width="5" stroke="black"/>
+            <line x1="250" y1="200" x2="250" y2="5" stroke-width="5" stroke="black"/>
+            <line x1="250" y1="5" x2="350" y2="5" stroke-width="5" stroke="black"/>
+            <line x1="350" y1="5" x2="350" y2="25" stroke-width="5" stroke="black"/>
+
+            <!-- Hangman -->
+            <circle id="hangman1" cx="350" cy="40" r="15" fill="transparent"/>
+            <line id="hangman2" x1="350" y1="35" x2="350" y2="100" stroke-width="5" stroke="transparent"/>
+            <line id="hangman3" x1="350" y1="65" x2="330" y2="90" stroke-width="5" stroke="transparent"/>
+            <line id="hangman4" x1="350" y1="65" x2="370" y2="90" stroke-width="5" stroke="transparent"/>
+            <line id="hangman5" x1="350" y1="100" x2="370" y2="120" stroke-width="5" stroke="transparent"/>
+            <line id="hangman6" x1="350" y1="100" x2="330" y2="120" stroke-width="5" stroke="transparent"/>
+
+            <!-- Lines -->
+            <line id="blank1" x1="10" y1="250" x2="30" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank2" x1="40" y1="250" x2="60" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank3" x1="70" y1="250" x2="90" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank4" x1="100" y1="250" x2="120" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank5" x1="130" y1="250" x2="150" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank6" x1="160" y1="250" x2="180" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank7" x1="190" y1="250" x2="210" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank8" x1="220" y1="250" x2="240" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank9" x1="250" y1="250" x2="270" y2="250" stroke-width="3" stroke="black"/>
+            <line id="blank10" x1="280" y1="250" x2="300" y2="250" stroke-width="3" stroke="black"/>
+        
+            <!-- Line Text -->
+            <text id="text1" x="20" y="240" text-anchor="middle"/>
+            <text id="text2" x="50" y="240" text-anchor="middle"/>
+            <text id="text3" x="80" y="240" text-anchor="middle"/>
+            <text id="text4" x="110" y="240" text-anchor="middle"/>
+            <text id="text5" x="140" y="240" text-anchor="middle"/>
+            <text id="text6" x="170" y="240" text-anchor="middle"/>
+            <text id="text7" x="200" y="240" text-anchor="middle"/>
+            <text id="text8" x="230" y="240" text-anchor="middle"/>
+            <text id="text9" x="260" y="240" text-anchor="middle"/>
+            <text id="text10" x="290" y="240" text-anchor="middle"/>
+
+            <!-- Guessed Letters -->
+            <text id="guessed" x="5" y="300">Guessed: </text>
+
+            <!-- Finished Text -->
+            <text id="finishText" x="5" y="350"></text>
+        </svg>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TicTacToe</title>
+        <script src="tictactoe.js"></script>
+    </head>
+    <body>
+        <svg width="500" height="500">
+            <!-- Board -->
+            <rect x="195" y="100" width="10" height="300" rx="5" ry="5" />
+            <rect x="295" y="100" width="10" height="300" rx="5" ry="5" />
+            <rect x="100" y="195" width="300" height="10" rx="5" ry="5" />
+            <rect x="100" y="295" width="300" height="10" rx="5" ry="5" />
+
+            <!-- X -->
+            <line id="1x1" opacity="0" x1="130" y1="130" x2="170" y2="170" stroke-width="5" stroke="black"/>
+            <line id="1x2" opacity="0" x1="130" y1="170" x2="170" y2="130" stroke-width="5" stroke="black"/>
+            <line id="2x1" opacity="0" x1="230" y1="130" x2="270" y2="170" stroke-width="5" stroke="black"/>
+            <line id="2x2" opacity="0" x1="230" y1="170" x2="270" y2="130" stroke-width="5" stroke="black"/>
+            <line id="3x1" opacity="0" x1="330" y1="130" x2="370" y2="170" stroke-width="5" stroke="black"/>
+            <line id="3x2" opacity="0" x1="330" y1="170" x2="370" y2="130" stroke-width="5" stroke="black"/>
+            <line id="4x1" opacity="0" x1="130" y1="230" x2="170" y2="270" stroke-width="5" stroke="black"/>
+            <line id="4x2" opacity="0" x1="130" y1="270" x2="170" y2="230" stroke-width="5" stroke="black"/>
+            <line id="5x1" opacity="0" x1="230" y1="230" x2="270" y2="270" stroke-width="5" stroke="black"/>
+            <line id="5x2" opacity="0" x1="230" y1="270" x2="270" y2="230" stroke-width="5" stroke="black"/>
+            <line id="6x1" opacity="0" x1="330" y1="230" x2="370" y2="270" stroke-width="5" stroke="black"/>
+            <line id="6x2" opacity="0" x1="330" y1="270" x2="370" y2="230" stroke-width="5" stroke="black"/>
+            <line id="7x1" opacity="0" x1="130" y1="330" x2="170" y2="370" stroke-width="5" stroke="black"/>
+            <line id="7x2" opacity="0" x1="130" y1="370" x2="170" y2="330" stroke-width="5" stroke="black"/>
+            <line id="8x1" opacity="0" x1="230" y1="330" x2="270" y2="370" stroke-width="5" stroke="black"/>
+            <line id="8x2" opacity="0" x1="230" y1="370" x2="270" y2="330" stroke-width="5" stroke="black"/>
+            <line id="9x1" opacity="0" x1="330" y1="330" x2="370" y2="370" stroke-width="5" stroke="black"/>
+            <line id="9x2" opacity="0" x1="330" y1="370" x2="370" y2="330" stroke-width="5" stroke="black"/>
+            
+            <!-- O -->
+            <circle id="1o1" opacity="0" cx="150" cy="150" r="25"/>
+            <circle id="1o2" opacity="0" cx="150" cy="150" r="20" fill="white"/>
+            <circle id="2o1" opacity="0" cx="250" cy="150" r="25"/>
+            <circle id="2o2" opacity="0" cx="250" cy="150" r="20" fill="white"/>
+            <circle id="3o1" opacity="0" cx="350" cy="150" r="25"/>
+            <circle id="3o2" opacity="0" cx="350" cy="150" r="20" fill="white"/>
+            <circle id="4o1" opacity="0" cx="150" cy="250" r="25"/>
+            <circle id="4o2" opacity="0" cx="150" cy="250" r="20" fill="white"/>
+            <circle id="5o1" opacity="0" cx="250" cy="250" r="25"/>
+            <circle id="5o2" opacity="0" cx="250" cy="250" r="20" fill="white"/>
+            <circle id="6o1" opacity="0" cx="350" cy="250" r="25"/>
+            <circle id="6o2" opacity="0" cx="350" cy="250" r="20" fill="white"/>
+            <circle id="7o1" opacity="0" cx="150" cy="350" r="25"/>
+            <circle id="7o2" opacity="0" cx="150" cy="350" r="20" fill="white"/>
+            <circle id="8o1" opacity="0" cx="250" cy="350" r="25"/>
+            <circle id="8o2" opacity="0" cx="250" cy="350" r="20" fill="white"/>
+            <circle id="9o1" opacity="0" cx="350" cy="350" r="25"/>
+            <circle id="9o2" opacity="0" cx="350" cy="350" r="20" fill="white"/>
+
+            <!-- Boxes -->
+            <rect id="1" x="100" y="100" width="95" height="95" fill="transparent" onclick="click('1')"/>
+            <rect id="2" x="205" y="100" width="90" height="95" fill="transparent" onclick="click('2')"/>
+            <rect id="3" x="305" y="100" width="95" height="95" fill="transparent" onclick="click('3')"/>
+            <rect id="4" x="100" y="205" width="95" height="90" fill="transparent" onclick="click('4')"/>
+            <rect id="5" x="205" y="205" width="90" height="90" fill="transparent" onclick="click('5')"/>
+            <rect id="6" x="305" y="205" width="95" height="90" fill="transparent" onclick="click('6')"/>
+            <rect id="7" x="100" y="305" width="95" height="95" fill="transparent" onclick="click('7')"/>
+            <rect id="8" x="205" y="305" width="90" height="95" fill="transparent" onclick="click('8')"/>
+            <rect id="9" x="305" y="305" width="95" height="95" fill="transparent" onclick="click('9')"/>
+        
+            <!-- Text -->
+            <text id="text" x="250" y="50" text-anchor="middle"></text>
+        </svg>
+    </body>
+</html>
